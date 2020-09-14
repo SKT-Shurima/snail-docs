@@ -4,7 +4,7 @@
 * [Front-end](front-end/README.md)
   * [webpack](front-end/webpack.md)
   * [ECMAScript](front-end/ecmascript.md)
-  * [JavaScript 常见设计模式](front-end/javascript-chang-jian-she-ji-mo-shi.md)
+  * [JavaScript 常见设计模式](front-end/javascript-design-mode.md)
   * [String](front-end/string.md)
   * [Object](front-end/object.md)
   * [Array]()
