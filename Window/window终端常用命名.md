@@ -2,10 +2,23 @@
 
 ####  新增文件、文件夹
 
-- 新增文件
+- 新增文件夹
 
   ```powershell
+  $ mkdir  wenjianjia
+  $ md wenjianjia
+  ```
   
+- 新建文件
+
+  ```powershell
+  $ type nul > wenjianming
+  ```
+
+- 新建非空文件
+
+  ```powershell
+  $ echo var name = "zhangsan"; > test.js
   ```
 
   
