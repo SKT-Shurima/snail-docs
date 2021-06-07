@@ -54,3 +54,31 @@
 - 杀死进程 `tasklist | findstr [进程号]`
 
   根据进程名称杀死进程： `taskkill /f /t /im [进程名称]`
+
+#### 拷贝
+
+- 拷贝**本地文件**至服务器根目录下
+
+  ```bash
+  scp test.txt root@192.168.1.127:/
+  ```
+
+- 拷贝**本地文件夹**至服务器根目录下
+
+  ```bash
+  scp -r /home/myDir root@192.168.1.127:/data/
+  ```
+
+- 从服务器拷贝**文件**至本地
+
+  ```bash
+  scp root@192.168.1.127:/data/test.txt /home/myDir
+  ```
+
+- 从服务器拷贝**文件夹**至本地
+
+  ```bash
+  scp -r root@192.168.1.127:/data/  /home/myDir
+  ```
+
+注：拷贝命令采用`scp`，当拷贝整个文件夹时，采用`scp -r`
