@@ -1,5 +1,17 @@
 # String
 
+- 标签化模板
+
+  ```js
+  const name = 'zhangsan', age = 18, city = ['hangzhou'];
+  
+  const tag = (literals, ...substitutions) => {
+  		//  输出 [ '', ' de age is ', ' in ', '.' ] [ 'zhangsan', 18, [ 'hangzhou' ] ]
+      console.log(literals, substitutions);
+  }
+  const strTemplate = tag`${name} de age is ${age} in ${city}.`; 
+  ```
+
 - ```String.prototype.pcodePointAt``` && ```String.fromCodePoint```
 
   ```codePointAt``` ：指的是字符串中按位置提取 Unicode 代码点，非负整数；
@@ -53,4 +65,17 @@
   
 
 - `String.indexOf` 、`String.lastIndexOf`
+
+- `String.raw`
+  获取模板字符串原始值：
+
+  ```js
+  let message1 = `Multiline\nstring`,
+      message2 = String.raw`Multiline\nstring`;
+  console.log(message1); // "Multiline
+  // string"
+  console.log(message2); // "Multiline\\nstring"
+  ```
+
+  
 
