@@ -1,6 +1,6 @@
-###  概览
+### 概览
 
-####  JavaScript 七大类型
+#### JavaScript 七大类型
 
 - String
 - Number
@@ -13,4 +13,3 @@
   - Array
   - Date
   - RegExp
-

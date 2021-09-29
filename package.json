@@ -1,0 +1,29 @@
+{
+  "name": "gitbook",
+  "version": "1.0.0",
+  "description": "---\r description: 前端知识汇总/日常bug记录\r ---",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp --no-cache",
+    "build": "vuepress build docs",
+    "lint-md": "yarn lint-md:style && yarn lint-md:wording",
+    "lint-md:style": "remark --quiet --frail .",
+    "lint-md:wording": "textlint ./docs/**/*.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKT-Shurima/gitbook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SKT-Shurima/gitbook/issues"
+  },
+  "homepage": "https://github.com/SKT-Shurima/gitbook#readme",
+  "devDependencies": {
+    "vuepress-plugin-auto-sidebar": "^2.3.2"
+  },
+  "dependencies": {
+    "vuepress": "1.8.2"
+  }
+}
