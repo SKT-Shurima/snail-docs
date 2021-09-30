@@ -27,7 +27,7 @@ Web 服务器和客户端是一对多的关系，一般完成并行处理请求�
 
    Nginx 异步机制采用的是异步非阻塞；
 
-![Nginx服务器架构示意图](./images/Nginx服务器架构示意图.png)
+![Nginx服务器架构示意图](./images/nginx01.png)
 
 <center>Nginx 服务架构示意图</center>
 
