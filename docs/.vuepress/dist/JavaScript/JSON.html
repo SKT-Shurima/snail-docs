@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>`JSON.stringify()`  `JSON.parse()` | 37.3℃</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="技术博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/images/logo.jpg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="keywords" content="37.3,vue,vuepress,vuepress-theme,theme,主题,vuepress主题,blog
+    ,vuepress-blog,java,python,shell,sql,golang,script,shell script,nginx,windows,linux">
+    <meta name="referrer" content="never">
+    
+    <link rel="preload" href="/assets/css/0.styles.440bf256.css" as="style"><link rel="preload" href="/assets/js/app.8fa4ac4a.js" as="script"><link rel="preload" href="/assets/js/2.e9038a4c.js" as="script"><link rel="preload" href="/assets/js/26.87af3239.js" as="script"><link rel="prefetch" href="/assets/js/10.0164efe3.js"><link rel="prefetch" href="/assets/js/11.6f2054b8.js"><link rel="prefetch" href="/assets/js/12.9230ee23.js"><link rel="prefetch" href="/assets/js/13.1549c383.js"><link rel="prefetch" href="/assets/js/14.1cbe1710.js"><link rel="prefetch" href="/assets/js/15.396e886e.js"><link rel="prefetch" href="/assets/js/16.68b58cdf.js"><link rel="prefetch" href="/assets/js/17.452631e5.js"><link rel="prefetch" href="/assets/js/18.b97d1cc7.js"><link rel="prefetch" href="/assets/js/19.1901a47a.js"><link rel="prefetch" href="/assets/js/20.1fa6fd37.js"><link rel="prefetch" href="/assets/js/21.255b38b6.js"><link rel="prefetch" href="/assets/js/22.d2111a3f.js"><link rel="prefetch" href="/assets/js/23.d930f3d8.js"><link rel="prefetch" href="/assets/js/24.021cbfea.js"><link rel="prefetch" href="/assets/js/25.b7c86d6d.js"><link rel="prefetch" href="/assets/js/27.6bee56d0.js"><link rel="prefetch" href="/assets/js/28.3819c31e.js"><link rel="prefetch" href="/assets/js/29.d0de12bf.js"><link rel="prefetch" href="/assets/js/3.3ab575cc.js"><link rel="prefetch" href="/assets/js/30.643671c5.js"><link rel="prefetch" href="/assets/js/31.3ee3a271.js"><link rel="prefetch" href="/assets/js/32.f1e8eb65.js"><link rel="prefetch" href="/assets/js/33.1f67d33b.js"><link rel="prefetch" href="/assets/js/34.14df5881.js"><link rel="prefetch" href="/assets/js/35.78795e75.js"><link rel="prefetch" href="/assets/js/36.1e2fbb39.js"><link rel="prefetch" href="/assets/js/37.467b6290.js"><link rel="prefetch" href="/assets/js/38.d7fba9a4.js"><link rel="prefetch" href="/assets/js/39.97f02563.js"><link rel="prefetch" href="/assets/js/4.ee3b1f65.js"><link rel="prefetch" href="/assets/js/40.b989a778.js"><link rel="prefetch" href="/assets/js/41.348e4c36.js"><link rel="prefetch" href="/assets/js/42.08970a2b.js"><link rel="prefetch" href="/assets/js/43.1c02c281.js"><link rel="prefetch" href="/assets/js/44.2afeb46d.js"><link rel="prefetch" href="/assets/js/45.7f248a68.js"><link rel="prefetch" href="/assets/js/46.a2693f4d.js"><link rel="prefetch" href="/assets/js/47.a90f63f5.js"><link rel="prefetch" href="/assets/js/48.d270cee6.js"><link rel="prefetch" href="/assets/js/49.c3a05137.js"><link rel="prefetch" href="/assets/js/5.005ce19c.js"><link rel="prefetch" href="/assets/js/50.1a7ad83e.js"><link rel="prefetch" href="/assets/js/51.8a35a41f.js"><link rel="prefetch" href="/assets/js/52.9b84c187.js"><link rel="prefetch" href="/assets/js/53.f0fe65d6.js"><link rel="prefetch" href="/assets/js/54.5d12c253.js"><link rel="prefetch" href="/assets/js/55.6ecf0e39.js"><link rel="prefetch" href="/assets/js/56.32513c56.js"><link rel="prefetch" href="/assets/js/57.118091dd.js"><link rel="prefetch" href="/assets/js/6.7aae6264.js"><link rel="prefetch" href="/assets/js/7.d085e899.js"><link rel="prefetch" href="/assets/js/8.f3f4a5db.js"><link rel="prefetch" href="/assets/js/9.95fd5824.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.440bf256.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./public/images/logo.jpg" alt="37.3℃" class="logo"> <span class="site-name can-hide">37.3℃</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Axios/" class="nav-link">
+  Axios
+</a></div><div class="nav-item"><a href="/Docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/Git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/HTML&amp;&amp;CSS/" class="nav-link">
+  HTML&amp;&amp;CSS
+</a></div><div class="nav-item"><a href="/HTTP/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Nginx/" class="nav-link">
+  Nginx
+</a></div><div class="nav-item"><a href="/Python/" class="nav-link">
+  Python
+</a></div><div class="nav-item"><a href="/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Window/" class="nav-link">
+  Window
+</a></div><div class="nav-item"><a href="/dev-tools/" class="nav-link">
+  dev-tools
+</a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Axios/" class="nav-link">
+  Axios
+</a></div><div class="nav-item"><a href="/Docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/Git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/HTML&amp;&amp;CSS/" class="nav-link">
+  HTML&amp;&amp;CSS
+</a></div><div class="nav-item"><a href="/HTTP/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Nginx/" class="nav-link">
+  Nginx
+</a></div><div class="nav-item"><a href="/Python/" class="nav-link">
+  Python
+</a></div><div class="nav-item"><a href="/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Window/" class="nav-link">
+  Window
+</a></div><div class="nav-item"><a href="/dev-tools/" class="nav-link">
+  dev-tools
+</a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java Script</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/JavaScript/" aria-current="page" class="sidebar-link">description: 常见设计模式、数据对象、es6 知识点等</a></li><li><a href="/JavaScript/Array.html" class="sidebar-link">Array</a></li><li><a href="/JavaScript/Browser.html" class="sidebar-link">Browser</a></li><li><a href="/JavaScript/Date.html" class="sidebar-link">Date</a></li><li><a href="/JavaScript/Ecmascript.html" class="sidebar-link">ECMAScript</a></li><li><a href="/JavaScript/Function.html" class="sidebar-link">Function</a></li><li><a href="/JavaScript/Introduction.html" class="sidebar-link">概览</a></li><li><a href="/JavaScript/JSON.html" aria-current="page" class="active sidebar-link">`JSON.stringify()`  `JSON.parse()`</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/JavaScript/Javascript设计模式.html" class="sidebar-link">JavaScript 常见设计模式</a></li><li><a href="/JavaScript/Number.html" class="sidebar-link">Number</a></li><li><a href="/JavaScript/Object.html" class="sidebar-link">Object</a></li><li><a href="/JavaScript/String.html" class="sidebar-link">String</a></li><li><a href="/JavaScript/debounce &amp; throttle.html" class="sidebar-link">debounce   &amp;   throttle</a></li><li><a href="/JavaScript/webpack.html" class="sidebar-link">webpack</a></li><li><a href="/JavaScript/常见工具代码片段.html" class="sidebar-link">常见工具代码片段</a></li><li><a href="/JavaScript/常见正则表达式.html" class="sidebar-link">常见正则表达式</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="json-stringify-json-parse"><a href="#json-stringify-json-parse" class="header-anchor">#</a> <code>JSON.stringify()</code> <code>JSON.parse()</code></h3> <p>将对象转换 JSON 串，将 JSON 串反解析成对象</p> <ul><li><p>可以作为深拷贝对象的方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>Object<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>ps： <code>JSON.stringify()</code> 在将<code>Object</code> 转成字符串时，需要注意一些问题：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    a<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">b</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    c<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">abc</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+    d<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// &quot;{&quot;c&quot;:{},&quot;d&quot;:&quot;2021-02-02T19:40:12.346Z&quot;}&quot;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// {c: {}, d: &quot;2021-02-02T19:40:12.346Z&quot;}</span>
+</code></pre></div><p><code>JSON.stringify()</code> 无法正确转换 JS 的部分属性；</p> <ul><li><p>undefiend</p></li> <li><p>Function</p></li> <li><p>RegExp（正则表达式，转换后变成了空对象）</p></li> <li><p>Date（转换后变成了字符串，而非 Date 类的对象）</p></li></ul></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/vuejs/vuepress/edit/master//JavaScript/JSON.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021-09-29 18:44:24</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/JavaScript/Introduction.html" class="prev">
+        概览
+      </a></span> <span class="next"><a href="/JavaScript/Javascript设计模式.html">
+        JavaScript 常见设计模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.8fa4ac4a.js" defer></script><script src="/assets/js/2.e9038a4c.js" defer></script><script src="/assets/js/26.87af3239.js" defer></script>
+  </body>
+</html>
