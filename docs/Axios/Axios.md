@@ -13,7 +13,7 @@ Axios 拦截器工作原理，`axios` 中内置两个拦截器：
 - 请求拦截器 `axios.interceptors.request.use()`;
 - 响应拦截器 `axios.interceptors.response.use()`;
 
-![img](./Axios/1595616-20190728145040109-427538891.png)
+<!-- ![img](./Axios/1595616-20190728145040109-427538891.png) -->
 
 实现思路：
 
@@ -21,7 +21,7 @@ Axios 拦截器工作原理，`axios` 中内置两个拦截器：
 - 在下次发送任意请求前，校验该 URL 是否已经被保存过了，如果是，则进行取消操作；
 
 ```javascript
-import axios from "axios";
+import axios from 'axios';
 
 const { CancelToken } = axios;
 const pending = [];
@@ -45,7 +45,7 @@ instance.interceptors.request.use((config) => {
   config.cancelToken = new CancelToken(function executor(c) {
     pending.push({
       url: `${config.method}${config.url}`,
-      f: c,
+      f: c
     });
   });
 });
