@@ -1,34 +1,22 @@
 ### Browser
 
+- 浏览器对应的`JavaScript`解析引擎
+
+  | 浏览器  | 解析引擎             |
+  | ------- | -------------------- |
+  | Chrome  | V8                   |
+  | FireFox | OdinMonkey（奥丁猴） |
+  | Safri   | JSCore               |
+  | IE      | Chakra (查克拉)      |
+
+  
+
 - 判断浏览器类型
 
   ```js
   function myBrowser() {
       var e = navigator.userAgent;
       return e.indexOf("OPR") > -1 ? "Opera" : e.indexOf("Firefox") > -1 ? "FF" : e.indexOf("Trident") > -1 ? "IE" : e.indexOf("Edge") > -1 ? "Edge" : e.indexOf("Chrome") > -1 ? "Chrome" : e.indexOf("Safari") > -1 ? "Safari" : void 0
-  }
-  ```
-
-- 复制内容到剪切板
-
-  ```js
-  /**
-   * @description: 复制内容到剪贴板
-   * @param  {string} value 待复制的内容
-   * @return {boolean} 标识是否复制成功
-   */
-  const copyToBoard = (value) => {
-      const element = document.createElement('textarea')
-      document.body.appendChild(element)
-      element.value = value
-      element.select()
-      if (document.execCommand('copy')) {
-          document.execCommand('copy')
-          document.body.removeChild(element)
-          return true
-      }
-      document.body.removeChild(element)
-      return false
   }
   ```
 

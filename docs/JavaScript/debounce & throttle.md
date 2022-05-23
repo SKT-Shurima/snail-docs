@@ -1,6 +1,6 @@
 ### debounce   &   throttle
 
-- debounce
+- `debounce`防抖
 
   ```js
   const debounce = (fn, wait) => {
@@ -22,7 +22,7 @@
   }
   ```
 
-- throttle
+- `throttle`节流
 
   ```js
   const throttle = (fn, delay) => {
