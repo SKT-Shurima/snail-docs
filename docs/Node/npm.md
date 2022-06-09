@@ -10,6 +10,7 @@
 - `npm i --save` <=>  `npm -S`  安装`dependencies`依赖
 - `npm i --save-dev` <=>  `npm -D`  安装`devDependencies`依赖
 - `npm i --prod` <=> `npm i --production` 仅安装 `dependencies` 中的依赖
+- `npm install -g cnpm --registry=https://registry.npm.taobao.org` 安装`cnpm`设置淘宝镜像
 
 
 
