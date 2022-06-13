@@ -33,7 +33,7 @@ module.exports = {
     repo: 'vuejs/vuepress',
     editLinks: true,
     docsDir: '/',
-    logo: './public/images/logo.jpg',
+    logo: '/images/logo.jpg',
     nav: utils.getNavigationMenu('./docs'),
     sidebar: utils.getSidebars('./'),
     // 最后更新时间
