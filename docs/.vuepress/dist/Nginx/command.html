@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx 常用命令 | 37.3℃</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="技术博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/images/logo.jpg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="keywords" content="37.3,vue,vuepress,vuepress-theme,theme,主题,vuepress主题,blog
+    ,vuepress-blog,java,python,shell,sql,golang,script,shell script,nginx,windows,linux">
+    <meta name="referrer" content="never">
+    
+    <link rel="preload" href="/assets/css/0.styles.14667330.css" as="style"><link rel="preload" href="/assets/js/app.a7ec4938.js" as="script"><link rel="preload" href="/assets/js/2.a96faf37.js" as="script"><link rel="preload" href="/assets/js/54.06f3a886.js" as="script"><link rel="prefetch" href="/assets/js/10.ff1e279c.js"><link rel="prefetch" href="/assets/js/11.367a7df3.js"><link rel="prefetch" href="/assets/js/12.2aef19d2.js"><link rel="prefetch" href="/assets/js/13.a91d719a.js"><link rel="prefetch" href="/assets/js/14.0459232a.js"><link rel="prefetch" href="/assets/js/15.810e8e44.js"><link rel="prefetch" href="/assets/js/16.c547e882.js"><link rel="prefetch" href="/assets/js/17.5c547c7c.js"><link rel="prefetch" href="/assets/js/18.f7c70f20.js"><link rel="prefetch" href="/assets/js/19.1f096600.js"><link rel="prefetch" href="/assets/js/20.7e571468.js"><link rel="prefetch" href="/assets/js/21.bfb6cd57.js"><link rel="prefetch" href="/assets/js/22.3d9fd21f.js"><link rel="prefetch" href="/assets/js/23.eb549d56.js"><link rel="prefetch" href="/assets/js/24.86fac710.js"><link rel="prefetch" href="/assets/js/25.ee1a7d89.js"><link rel="prefetch" href="/assets/js/26.8a989812.js"><link rel="prefetch" href="/assets/js/27.0ecb576b.js"><link rel="prefetch" href="/assets/js/28.ecd0a2fb.js"><link rel="prefetch" href="/assets/js/29.438fe619.js"><link rel="prefetch" href="/assets/js/3.241577d6.js"><link rel="prefetch" href="/assets/js/30.c3fae003.js"><link rel="prefetch" href="/assets/js/31.a1445ca1.js"><link rel="prefetch" href="/assets/js/32.031c257b.js"><link rel="prefetch" href="/assets/js/33.686b11df.js"><link rel="prefetch" href="/assets/js/34.9049e3bd.js"><link rel="prefetch" href="/assets/js/35.1abde0e1.js"><link rel="prefetch" href="/assets/js/36.8add82d0.js"><link rel="prefetch" href="/assets/js/37.14823cb0.js"><link rel="prefetch" href="/assets/js/38.7043f833.js"><link rel="prefetch" href="/assets/js/39.2c3dba29.js"><link rel="prefetch" href="/assets/js/4.9052a845.js"><link rel="prefetch" href="/assets/js/40.a091c852.js"><link rel="prefetch" href="/assets/js/41.8ac5c63e.js"><link rel="prefetch" href="/assets/js/42.694b2b2d.js"><link rel="prefetch" href="/assets/js/43.41d8c676.js"><link rel="prefetch" href="/assets/js/44.72858887.js"><link rel="prefetch" href="/assets/js/45.e76213e0.js"><link rel="prefetch" href="/assets/js/46.4344aa62.js"><link rel="prefetch" href="/assets/js/47.eea7500e.js"><link rel="prefetch" href="/assets/js/48.bf42e7d8.js"><link rel="prefetch" href="/assets/js/49.3dc8be14.js"><link rel="prefetch" href="/assets/js/5.467507bd.js"><link rel="prefetch" href="/assets/js/50.38750485.js"><link rel="prefetch" href="/assets/js/51.38e7c66e.js"><link rel="prefetch" href="/assets/js/52.5cf5136f.js"><link rel="prefetch" href="/assets/js/53.b6f41c66.js"><link rel="prefetch" href="/assets/js/55.d8cdf2fb.js"><link rel="prefetch" href="/assets/js/56.4a991761.js"><link rel="prefetch" href="/assets/js/57.c44c9f58.js"><link rel="prefetch" href="/assets/js/58.ad98aebc.js"><link rel="prefetch" href="/assets/js/59.ac0d17b6.js"><link rel="prefetch" href="/assets/js/6.67395f1c.js"><link rel="prefetch" href="/assets/js/60.21e8360b.js"><link rel="prefetch" href="/assets/js/61.b6cc39fc.js"><link rel="prefetch" href="/assets/js/62.4b109a36.js"><link rel="prefetch" href="/assets/js/63.1b3faf0c.js"><link rel="prefetch" href="/assets/js/64.6899947d.js"><link rel="prefetch" href="/assets/js/65.05ef9822.js"><link rel="prefetch" href="/assets/js/66.0a8b0316.js"><link rel="prefetch" href="/assets/js/67.254cc83c.js"><link rel="prefetch" href="/assets/js/68.41cb7225.js"><link rel="prefetch" href="/assets/js/69.cb9fb52f.js"><link rel="prefetch" href="/assets/js/7.388cf533.js"><link rel="prefetch" href="/assets/js/70.33387b1d.js"><link rel="prefetch" href="/assets/js/8.4b45278a.js"><link rel="prefetch" href="/assets/js/9.6dc9941e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.14667330.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.jpg" alt="37.3℃" class="logo"> <span class="site-name can-hide">37.3℃</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Axios/" class="nav-link">
+  Axios
+</a></div><div class="nav-item"><a href="/Docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/Git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/HTML&amp;&amp;CSS/" class="nav-link">
+  HTML&amp;&amp;CSS
+</a></div><div class="nav-item"><a href="/HTTP/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Nginx/" class="nav-link router-link-active">
+  Nginx
+</a></div><div class="nav-item"><a href="/Node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/Python/" class="nav-link">
+  Python
+</a></div><div class="nav-item"><a href="/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Window/" class="nav-link">
+  Window
+</a></div><div class="nav-item"><a href="/dev-tools/" class="nav-link">
+  dev-tools
+</a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Axios/" class="nav-link">
+  Axios
+</a></div><div class="nav-item"><a href="/Docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/Git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/HTML&amp;&amp;CSS/" class="nav-link">
+  HTML&amp;&amp;CSS
+</a></div><div class="nav-item"><a href="/HTTP/" class="nav-link">
+  HTTP
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Nginx/" class="nav-link router-link-active">
+  Nginx
+</a></div><div class="nav-item"><a href="/Node/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="/Python/" class="nav-link">
+  Python
+</a></div><div class="nav-item"><a href="/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/Window/" class="nav-link">
+  Window
+</a></div><div class="nav-item"><a href="/dev-tools/" class="nav-link">
+  dev-tools
+</a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Nginx</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Nginx/" aria-current="page" class="sidebar-link">/Nginx/</a></li><li><a href="/Nginx/Gzip 压缩.html" class="sidebar-link">Gzip 压缩</a></li><li><a href="/Nginx/Nginx 架构设计.html" class="sidebar-link">Nginx 服务器的 Web 请求处理机制</a></li><li><a href="/Nginx/Rewrite.html" class="sidebar-link">Rewrite</a></li><li><a href="/Nginx/command.html" aria-current="page" class="active sidebar-link">Nginx 常用命令</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Nginx/指令及基本介绍.html" class="sidebar-link">Nginx 命令：</a></li><li><a href="/Nginx/正向代理和反向代理.html" class="sidebar-link">正向代理、反向代理</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="nginx-常用命令"><a href="#nginx-常用命令" class="header-anchor">#</a> Nginx 常用命令</h3> <ul><li>查看<code>nginx.config</code>路径</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>$ where nginx <span class="token comment"># /usr/local/bin/nginx</span>
+$ /usr/local/bin/nginx -V
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/vuejs/vuepress/edit/master//Nginx/command.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022-06-09 14:30:30</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Nginx/Rewrite.html" class="prev">
+        Rewrite
+      </a></span> <span class="next"><a href="/Nginx/指令及基本介绍.html">
+        Nginx 命令：
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a7ec4938.js" defer></script><script src="/assets/js/2.a96faf37.js" defer></script><script src="/assets/js/54.06f3a886.js" defer></script>
+  </body>
+</html>
