@@ -20,11 +20,12 @@ const gatherCatalog = (dir = docsRootPath, level = 0) => {
     const fullPath = path.join(dir, item);
     const isDir = fs.lstatSync(fullPath).isDirectory();
     if (item.startsWith('.') || (!isDir && !item.endsWith('.md'))) return;
+    item = item.replace(/^docs/g,'');
     if (isDir || level === 0) {
-      catalog += `### [${item.replace(/\.md$/g, '')}](${fullPath.replace(/\s+/g, '')})\n`
+      catalog += `### [${item.replace(/\.md$/g, '')}](${fullPath.replace(/^docs/g,'').replace(/\s+/g, '')})\n`
       if (isDir) gatherCatalog(fullPath, level + 1);
     } else {
-      const subCatalogTitle = `- [${item.replace(/\.md$/g, '')}](${fullPath.replace(/\s+/g, '')})\n`;
+      const subCatalogTitle = `- [${item.replace(/\.md$/g, '')}](${fullPath.replace(/^docs/g,'').replace(/\s+/g, '')})\n`;
       item === 'README.md' ? subCatalog.unshift(subCatalogTitle) : subCatalog.push(subCatalogTitle);
     }
   });
