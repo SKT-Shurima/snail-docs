@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.d7177610.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Nginx/Rewrite.md","lastUpdated":1632912264000}'),p={name:"Nginx/Rewrite.md"},t=l("",4),e=[t];function o(c,r,i,d,y,C){return n(),a("div",null,e)}const u=s(p,[["render",o]]);export{A as __pageData,u as default};

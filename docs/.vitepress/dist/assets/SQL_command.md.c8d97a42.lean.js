@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.d7177610.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/command.md","lastUpdated":1656581365000}'),p={name:"SQL/command.md"},o=l("",2),e=[o];function t(C,c,r,A,y,D){return n(),a("div",null,e)}const F=s(p,[["render",t]]);export{d as __pageData,F as default};
