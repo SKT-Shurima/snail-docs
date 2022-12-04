@@ -4,7 +4,7 @@
 
 使用`react-route` 监听路由变化：
 
-```react
+```typescript
 const unlisten = this.props.history.listen(location => {
   // 通过最新路由的 pathname 来判断路由是否发生变化
   if(this.props.location.pathname !== location.pathname){

@@ -1,15 +1,16 @@
 {
-  "name": "gitbook",
-  "version": "1.0.0",
+  "name": "SnailDocs",
+  "version": "2.0.0",
   "description": "---\r description: 前端知识汇总/日常bug记录\r ---",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp --no-cache",
-    "build": "yarn doc && vuepress build docs --temp .temp --no-cache",
-    "lint-md": "yarn lint-md:style && yarn lint-md:wording",
+    "auto-catalog": "node ./scripts/auto-update-catalog.js",
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:preview": "vitepress preview docs",
     "lint-md:style": "remark --quiet --frail .",
     "lint-md:wording": "textlint ./docs/**/*.md",
-    "doc": "node ./scripts/auto-update-catalog.js"
+    "lint-md": "yarn lint-md:style && yarn lint-md:wording"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,9 @@
   },
   "homepage": "https://github.com/SKT-Shurima/gitbook#readme",
   "devDependencies": {
-    "vuepress-plugin-auto-sidebar": "^2.3.2"
+    "@types/node": "^18.11.10",
+    "vitepress": "^1.0.0-alpha.29",
+    "vue": "^3.2.45"
   },
-  "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.8.2",
-    "moment": "^2.29.1",
-    "vuepress": "1.8.2",
-    "vuepress-plugin-code-copy": "^1.0.6"
-  }
+  "dependencies": {}
 }

@@ -20,13 +20,16 @@ const gatherCatalog = (dir = docsRootPath, level = 0) => {
     const fullPath = path.join(dir, item);
     const isDir = fs.lstatSync(fullPath).isDirectory();
     if (item.startsWith('.') || (!isDir && !item.endsWith('.md'))) return;
-    item = item.replace(/^docs/g,'');
+    item = item.replace(/^docs/g, '');
+    const name = item.replace(/\.md$/g, '')
     if (isDir || level === 0) {
-      catalog += `### [${item.replace(/\.md$/g, '')}](${fullPath.replace(/^docs/g,'').replace(/\s+/g, '')})\n`
+      catalog += `### ${name}\n`
       if (isDir) gatherCatalog(fullPath, level + 1);
     } else {
-      const subCatalogTitle = `- [${item.replace(/\.md$/g, '')}](${fullPath.replace(/^docs/g,'').replace(/\s+/g, '')})\n`;
-      item === 'README.md' ? subCatalog.unshift(subCatalogTitle) : subCatalog.push(subCatalogTitle);
+      const linkName = item === 'index.md' ? 'Chapter Home Page' : name;
+      const link = fullPath.replace(/^docs/g, '').replace(/\s+/g, '').replace(/\.md$/g, '');
+      const subCatalogTitle = `- <a href="${link}" target="_blank" rel="noreferrer">${linkName}</a>\n`;
+      item === 'index.md' ? subCatalog.unshift(subCatalogTitle) : subCatalog.push(subCatalogTitle);
     }
   });
   const [README, ...restSub] = subCatalog;
@@ -41,11 +44,11 @@ const gatherCatalog = (dir = docsRootPath, level = 0) => {
  * <!-- API-tocstop -->
  */
 const updateReadmeCatalog = () => {
-  const readmePath = path.join("./docs/README.md");
+  const readmePath = path.join("./docs/index.md");
   return new Promise(resolve => {
     fs.readFile(readmePath, "utf-8", (error, content) => {
       const [preCont, , endCont] = content.trim().split(/(?:<!-- API-toc(?:\s*stop)? -->)/g);
-      fs.writeFileSync(readmePath, `${preCont}\n<!-- API-toc -->\n${catalog}<!-- API-tocstop -->\n${endCont}`);
+      fs.writeFileSync(readmePath, `${preCont}<!-- API-toc -->\n${catalog}<!-- API-tocstop -->\n${endCont}`);
       resolve();
     });
   });

@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.d7177610.js";const y=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Linux/command.md","lastUpdated":1653396613000}'),p={name:"Linux/command.md"},e=l("",12),o=[e];function c(t,i,d,r,h,u){return n(),a("div",null,o)}const b=s(p,[["render",c]]);export{y as __pageData,b as default};

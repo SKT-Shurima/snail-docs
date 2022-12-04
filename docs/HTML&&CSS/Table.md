@@ -6,7 +6,7 @@
 
 ```less
 .table {
-	table-layout: fixed;
+		table-layout: fixed;
     word-break: break-all;
 }
 ```
