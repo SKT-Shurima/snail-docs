@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as p}from"./app.bb35e70d.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"JavaScript/JSON.md","lastUpdated":1632912264000}'),o={name:"JavaScript/JSON.md"},l=p("",3),e=[l];function t(c,r,y,D,i,A){return n(),a("div",null,e)}const d=s(o,[["render",t]]);export{C as __pageData,d as default};
