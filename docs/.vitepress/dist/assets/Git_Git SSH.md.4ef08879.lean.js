@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as e,a as n}from"./app.d7177610.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Git/Git SSH.md","lastUpdated":1632912264000}'),p={name:"Git/Git SSH.md"},t=n("",9),o=[t];function c(l,i,d,r,h,_){return e(),a("div",null,o)}const y=s(p,[["render",c]]);export{u as __pageData,y as default};

@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '37.3°C',
   description: 'Vite & Vue powered static site generator.',
-
+  base:'/snail-docs/',
   lastUpdated: true,
   cleanUrls: 'without-subfolders',
 
