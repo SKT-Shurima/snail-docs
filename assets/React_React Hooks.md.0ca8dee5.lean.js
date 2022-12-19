@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.6d7cf6a0.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"React/React Hooks.md","lastUpdated":1646620167000}'),p={name:"React/React Hooks.md"},o=l("",16),e=[o];function t(c,r,F,D,y,C){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

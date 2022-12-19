@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as s,a as e}from"./app.bb35e70d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Nginx/command.md","lastUpdated":1656477991000}'),o={name:"Nginx/command.md"},t=e("",3),c=[t];function i(l,r,p,d,_,h){return s(),a("div",null,c)}const u=n(o,[["render",i]]);export{m as __pageData,u as default};

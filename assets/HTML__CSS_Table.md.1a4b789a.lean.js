@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as e,a as n}from"./app.6d7cf6a0.js";const y=JSON.parse('{"title":"Table","description":"","frontmatter":{},"headers":[],"relativePath":"HTML&&CSS/Table.md","lastUpdated":1670163525000}'),l={name:"HTML&&CSS/Table.md"},o=n("",4),t=[o];function p(c,r,d,i,_,D){return e(),a("div",null,t)}const F=s(l,[["render",p]]);export{y as __pageData,F as default};
