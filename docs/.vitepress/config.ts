@@ -1,12 +1,12 @@
 import { defineConfig } from "vitepress"
-import { version } from '../../package.json'
+import { version, name } from '../../package.json'
 import { getNavigationMenu, getSidebars } from './utils'
 
 export default defineConfig({
   lang: 'zh-CN',
   title: '37.3°C',
   description: 'Vite & Vue powered static site generator.',
-  base:'/snail-docs/',
+  base: '/snail-docs/',
   lastUpdated: true,
   cleanUrls: 'without-subfolders',
 
@@ -53,13 +53,13 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present SKT-Shurima'
+      copyright: `${name} ${version},Copyright © 2019-present SKT-Shurima`
     },
 
     algolia: {
-      appId: '8J64VVRP8K',
-      apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-      indexName: 'vitepress'
+      appId: 'KR5WFR4T3L',
+      apiKey: 'b761b25826229df1ee460acd3ee6fe96',
+      indexName: 'SnailDocs'
     },
 
     // carbonAds: {
