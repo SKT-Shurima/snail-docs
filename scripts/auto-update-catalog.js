@@ -27,7 +27,7 @@ const gatherCatalog = (dir = docsRootPath, level = 0) => {
       if (isDir) gatherCatalog(fullPath, level + 1);
     } else {
       const linkName = item === 'index.md' ? 'Chapter Home Page' : name;
-      const link = fullPath.replace(/^docs/g, '').replace(/\s+/g, '').replace(/\.md$/g, '');
+      const link = fullPath.replace(/^docs/g, '/snail-docs').replace(/\s+/g, '').replace(/\.md$/g, '');
       const subCatalogTitle = `- <a href="${link}" target="_blank" rel="noreferrer">${linkName}</a>\n`;
       item === 'index.md' ? subCatalog.unshift(subCatalogTitle) : subCatalog.push(subCatalogTitle);
     }

@@ -7,6 +7,11 @@ type NavItem = DefaultTheme.NavItem
 type Sidebar = DefaultTheme.Sidebar
 type SidebarItem = DefaultTheme.SidebarItem
 
+
+export enum ConfigEnum {
+  BASE_PATH = '/snail-docs/',
+} 
+
 /**
  * 执行命令
  *

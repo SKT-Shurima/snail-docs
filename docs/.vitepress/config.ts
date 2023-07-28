@@ -1,12 +1,12 @@
 import { defineConfig } from "vitepress"
 import { version, name } from '../../package.json'
-import { getNavigationMenu, getSidebars } from './utils'
+import { ConfigEnum, getNavigationMenu, getSidebars } from './utils'
 
 export default defineConfig({
   lang: 'zh-CN',
   title: '37.3°C',
   description: 'Vite & Vue powered static site generator.',
-  base: '/snail-docs/',
+  base: ConfigEnum.BASE_PATH,
   lastUpdated: true,
 
   // 额外的需要被注入到当前页面的 HTML <head> 中的标签
