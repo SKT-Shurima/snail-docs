@@ -8,7 +8,6 @@ export default defineConfig({
   description: 'Vite & Vue powered static site generator.',
   base: '/snail-docs/',
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
 
   // 额外的需要被注入到当前页面的 HTML <head> 中的标签
   head: [

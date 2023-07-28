@@ -24,8 +24,7 @@
   "homepage": "https://github.com/SKT-Shurima/gitbook#readme",
   "devDependencies": {
     "@types/node": "^18.11.10",
-    "vitepress": "^1.0.0-alpha.29",
+    "vitepress": "^1.0.0-beta.6",
     "vue": "^3.2.45"
-  },
-  "dependencies": {}
+  }
 }

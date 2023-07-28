@@ -49,6 +49,7 @@ actionLink: /#命令
 - <a href="/JavaScript/Promise" target="_blank" rel="noreferrer">Promise</a>
 - <a href="/JavaScript/Repaint&Reflow" target="_blank" rel="noreferrer">Repaint & Reflow</a>
 - <a href="/JavaScript/String" target="_blank" rel="noreferrer">String</a>
+- <a href="/JavaScript/Symbol" target="_blank" rel="noreferrer">Symbol</a>
 - <a href="/JavaScript/WebAPI" target="_blank" rel="noreferrer">Web API</a>
 - <a href="/JavaScript/debounce&throttle" target="_blank" rel="noreferrer">debounce & throttle</a>
 - <a href="/JavaScript/webpack" target="_blank" rel="noreferrer">webpack</a>
@@ -95,5 +96,6 @@ actionLink: /#命令
 - <a href="/dev-tools/index" target="_blank" rel="noreferrer">Chapter Home Page</a>
 ### files
 ### index
+### test
 ### 优质好文
 <!-- API-tocstop -->
