@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.6d7cf6a0.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Axios/index.md","lastUpdated":1670163525000}'),o={name:"Axios/index.md"};function s(n,r,c,d,i,p){return a(),t("div")}const x=e(o,[["render",s]]);export{m as __pageData,x as default};

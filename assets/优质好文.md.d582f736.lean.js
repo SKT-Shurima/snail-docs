@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as t,U as a}from"./chunks/framework.835c9fd2.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"优质好文.md","filePath":"优质好文.md","lastUpdated":1653311019000}'),i={name:"优质好文.md"},n=a("",2),l=[n];function o(s,c,_,f,m,p){return r(),t("div",null,l)}const b=e(i,[["render",o]]);export{d as __pageData,b as default};

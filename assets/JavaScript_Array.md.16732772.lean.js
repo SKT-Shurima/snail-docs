@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.6d7cf6a0.js";const i=JSON.parse('{"title":"Array","description":"","frontmatter":{},"headers":[],"relativePath":"JavaScript/Array.md","lastUpdated":1632912264000}'),p={name:"JavaScript/Array.md"},o=l("",4),e=[o];function t(r,c,D,y,F,C){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};
