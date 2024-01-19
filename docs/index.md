@@ -50,6 +50,7 @@ actionLink: /#命令
 - <a href="/snail-docs/JavaScript/Repaint&Reflow" target="_blank" rel="noreferrer">Repaint & Reflow</a>
 - <a href="/snail-docs/JavaScript/String" target="_blank" rel="noreferrer">String</a>
 - <a href="/snail-docs/JavaScript/Symbol" target="_blank" rel="noreferrer">Symbol</a>
+- <a href="/snail-docs/JavaScript/TS重点特性" target="_blank" rel="noreferrer">TS 重点特性</a>
 - <a href="/snail-docs/JavaScript/WebAPI" target="_blank" rel="noreferrer">Web API</a>
 - <a href="/snail-docs/JavaScript/debounce&throttle" target="_blank" rel="noreferrer">debounce & throttle</a>
 - <a href="/snail-docs/JavaScript/webpack" target="_blank" rel="noreferrer">webpack</a>
@@ -97,4 +98,7 @@ actionLink: /#命令
 ### files
 ### index
 ### 优质好文
+### 常见问题及解决方案
+### 禁止打开控制台
+- <a href="/snail-docs/常见问题及解决方案/禁止打开控制台/禁止打开控制台" target="_blank" rel="noreferrer">禁止打开控制台</a>
 <!-- API-tocstop -->
