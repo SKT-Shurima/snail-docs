@@ -1,0 +1,13 @@
+- JS中访问私有变量
+- override
+- static blocks in classes
+- catch err 的类型收敛为 unknown
+- 类型  `name?: string` 等价于`name?:string | undefined `，此处做了增进
+- `import` 引入文件类型断言；
+- `super()`之前允许调用不含有`this`的方法；
+- `import` 顺序调整
+- `satisfies`  联合类型
+- 装饰器 break change
+- 常量类型参数 `<const  T extends BaseParams>`
+- `setter` 和`getter`的参数没有关联
+- JS新增关键字`using`
