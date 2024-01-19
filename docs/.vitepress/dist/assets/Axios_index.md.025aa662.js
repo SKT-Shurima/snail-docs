@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.835c9fd2.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Axios/index.md","filePath":"Axios/index.md","lastUpdated":1670163525000}'),o={name:"Axios/index.md"};function s(n,r,i,d,c,p){return t(),a("div")}const m=e(o,[["render",s]]);export{x as __pageData,m as default};

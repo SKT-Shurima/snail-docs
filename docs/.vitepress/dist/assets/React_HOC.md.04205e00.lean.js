@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as p}from"./app.bb35e70d.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"React/HOC.md","lastUpdated":1646620167000}'),l={name:"React/HOC.md"},o=p("",10),e=[o];function c(t,r,F,y,D,C){return a(),n("div",null,e)}const d=s(l,[["render",c]]);export{i as __pageData,d as default};
